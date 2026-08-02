@@ -9,6 +9,50 @@
 ---
 
 # Vision
+---
+
+# Company Divisions
+
+## 1. AI Infrastructure
+- Private AI cloud
+- GPU clusters
+- Self-hosted inference
+- Model serving
+
+## 2. AI Engineering
+- Autonomous coding agents
+- Software factories
+- Repository automation
+- CI/CD intelligence
+
+## 3. AI Safety
+- SCAR Runtime
+- ECHO
+- Policy engine
+- Governance
+
+## 4. AI Products
+- Business automation
+- Enterprise copilots
+- AI assistants
+- APIs
+
+## 5. AI Research
+- Foundation models
+- Small language models
+- Agent research
+- Evaluation
+
+## 6. AI Academy
+- Documentation
+- Training
+- Community
+- Certification
+
+## Long-term Goal
+
+Become Africa's leading AI Engineering company and one of the world's most trusted builders of autonomous engineering systems.
+
 
 To build the world's most trusted AI Engineering Company, originating from Africa, that designs autonomous engineering systems, intelligent automation platforms, secure AI infrastructure, and safety-first artificial intelligence capable of transforming how software is built and how businesses operate.
 
