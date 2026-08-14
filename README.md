@@ -1,56 +1,123 @@
 # Olori AI Engineer
 
-A production-ready Python AI project scaffold built with best practices.
+> **Intelligent Autonomy, Uncompromised Integrity**
+
+**OAE™ Engineering Standard**
+
+Olori AI Engineer is an AI engineering project focused on reliable, autonomous software-engineering workflows. The repository is maintained under the Open Autonomous Engineer (OAE™) engineering standard: security first, explicit verification, deterministic behaviour where practical, and human oversight for consequential changes.
 
 ## Architecture
 
-This project follows the **src-layout**, ensuring a clean separation between source code, tests, and metadata.
+This project follows a `src`-layout with separation between application code, tests, configuration, and engineering documentation.
 
-### Directory Structure
-- `src/`: Core application logic.
-  - `core/`: Configuration, logging, and exception handling.
-  - `services/`: Business logic and AI model integrations.
-  - `utils/`: Helper functions and utilities.
-- `tests/`: Pytest suite.
-- `docs/`: Project documentation.
-- `.env.example`: Template for environment variables.
+```text
+src/
+├── core/       # Configuration, logging, exceptions, and core concerns
+├── router/     # Application routing boundaries
+├── services/   # Business logic and AI integrations
+├── utils/      # Shared utilities
+└── main.py     # Application entry point
+
+tests/          # Automated tests
+docs/           # Project documentation
+agents/         # Agent definitions and workflows
+bin/            # Project tooling
+```
 
 ## Getting Started
 
 ### Prerequisites
+
 - Python 3.10+
-- Recommended: `venv` or `conda`
+- `venv` or another isolated Python environment
 
 ### Installation
-1. Clone the repository.
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Configure environment variables:
-   ```bash
-   cp .env.example .env
-   # Edit .env with your specific configuration
-   ```
 
-### Running the Project
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+```
+
+Review `.env` before running the application. Never commit credentials or other secrets.
+
+### Running
+
 ```bash
 python -m src.main
 ```
 
-### Running Tests
+### Testing
+
 ```bash
 pytest
 ```
 
-## Production Readiness
-- **Validation:** Pydantic Settings for strict configuration validation.
-- **Logging:** Dual console and file logging with structured formatting.
-- **Type Safety:** Full type hint coverage (Python 3.10+).
-- **Modularity:** Clear separation of concerns.
-- **Error Handling:** Centralized custom exception hierarchy.
+### Code quality
+
+```bash
+black .
+isort .
+mypy .
+```
+
+## Engineering Standards
+
+OAE™ applies the following principles to this repository:
+
+- Security before convenience
+- Correctness before speed
+- Human approval for consequential changes
+- Tests before integration
+- Verification before completion
+- Preserve existing behaviour unless a change is intentional
+- Prefer explicit contracts over hidden assumptions
+- Keep architecture modular and maintainable
+- Document significant engineering decisions
+- Keep dependencies and configuration auditable
+
+The engineering workflow is:
+
+```text
+Analyze
+  ↓
+Review
+  ↓
+Plan
+  ↓
+Human Approval
+  ↓
+Implement
+  ↓
+Test
+  ↓
+Verify
+  ↓
+Re-analyze
+```
+
+## Project Governance
+
+The repository's mission, constitution, workforce model, and roadmap are maintained as first-class engineering documents:
+
+- `MISSION.md`
+- `CONSTITUTION.md`
+- `ENGINEERING_STANDARDS.md`
+- `WORKFORCE.md`
+- `ROADMAP.md`
+- `MASTER_ROADMAP.md`
+
+These documents should remain consistent with the implementation. Empty or obsolete governance documents are treated as engineering debt and are addressed through controlled changes.
+
+## Status
+
+Active development. This repository is being progressively reviewed and professionalized through OAE™ engineering workflows.
+
+## License
+
+MIT
+
+---
+
+**Engineered with OAE™ — Open Autonomous Engineer**
