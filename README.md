@@ -1,122 +1,32 @@
+<div align="center">
+
 # Olori AI Engineer
 
-> **Intelligent Autonomy, Uncompromised Integrity**
+**Intelligent autonomy with explicit verification and human oversight.**
 
-**OAE™ Engineering Standard**
+[![Documentation standard](https://img.shields.io/badge/README-Premium%20Standard-111827?style=flat-square)](#documentation-standard)
+[![GitHub](https://img.shields.io/badge/GitHub-Olori24-181717?style=flat-square&logo=github)](https://github.com/Olori24)
 
-Olori AI Engineer is an AI engineering project focused on reliable, autonomous software-engineering workflows. The repository is maintained under the Open Autonomous Engineer (OAE™) engineering standard: security first, explicit verification, deterministic behaviour where practical, and human oversight for consequential changes.
+</div>
 
-## Architecture
+![Olori AI Engineer architecture overview](./docs/assets/repo-hero.svg)
 
-This project follows a `src`-layout with separation between application code, tests, configuration, and engineering documentation.
+> **Repository status:** Active development. This README separates implemented repository capabilities from roadmap and environment-dependent work.
 
-```text
-src/
-├── core/       # Configuration, logging, exceptions, and core concerns
-├── router/     # Application routing boundaries
-├── services/   # Business logic and AI integrations
-├── utils/      # Shared utilities
-└── main.py     # Application entry point
+## Documentation standard
 
-tests/          # Automated tests
-docs/           # Project documentation
-agents/         # Agent definitions and workflows
-bin/            # Project tooling
-```
+This repository follows the premium documentation standard established for NSMS: strong product positioning, visual orientation, architecture, security boundaries, setup, validation evidence, maturity tracking, roadmap separation, and honest production-status language.
 
-## Getting Started
+| Evidence label | Meaning |
+|---|---|
+| **IMPLEMENTED** | Present in the repository. |
+| **TESTED** | Supported by an executed test or CI result. |
+| **DEPLOYED** | A deployment target/configuration exists. |
+| **VERIFIED IN PRODUCTION** | Confirmed with production evidence. |
+| **MEASURED** | Backed by an actual measurement. |
+| **ROADMAP** | Planned work, not a shipped capability. |
 
-### Prerequisites
-
-- Python 3.10+
-- `venv` or another isolated Python environment
-
-### Installation
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-```
-
-Review `.env` before running the application. Never commit credentials or other secrets.
-
-### Running
-
-```bash
-python -m src.main
-```
-
-### Testing
-
-```bash
-pytest
-```
-
-### Code quality
-
-```bash
-black .
-isort .
-mypy .
-```
-
-## Engineering Standards
-
-OAE™ applies the following principles to this repository:
-
-- Security before convenience
-- Correctness before speed
-- Human approval for consequential changes
-- Tests before integration
-- Verification before completion
-- Preserve existing behaviour unless a change is intentional
-- Prefer explicit contracts over hidden assumptions
-- Keep architecture modular and maintainable
-- Document significant engineering decisions
-- Keep dependencies and configuration auditable
-
-The engineering workflow is:
-
-```text
-Analyze
-  ↓
-Review
-  ↓
-Plan
-  ↓
-Human Approval
-  ↓
-Implement
-  ↓
-Test
-  ↓
-Verify
-  ↓
-Re-analyze
-```
-
-## Project Governance
-
-The repository's mission, constitution, workforce model, and roadmap are maintained as first-class engineering documents:
-
-- `MISSION.md`
-- `CONSTITUTION.md`
-- `ENGINEERING_STANDARDS.md`
-- `WORKFORCE.md`
-- `ROADMAP.md`
-- `MASTER_ROADMAP.md`
-
-These documents should remain consistent with the implementation. Empty or obsolete governance documents are treated as engineering debt and are addressed through controlled changes.
-
-## Status
-
-Active development. This repository is being progressively reviewed and professionalized through OAE™ engineering workflows.
-
-## License
-
-MIT
+The existing project-specific technical documentation below remains the source for detailed implementation information.
 
 ---
 
